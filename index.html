@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+  <div class="layout">
+    <div class="layoutImage">
+      <img src="images/pattern-circles.svg" alt="Circles">
+    </div>
+    <h4 class="text-center">Simple, traffic-based pricing</h4>
+    <h5 class="text-center">Sign-up for our 30-day trial. No credit card required. </h5>
+  <div class="priceComponent">
+
+      <div class="priceRangeSlider ">
+        <div class="d-flex justify-content-between">
+          <h5 id="pageView">50K Pageviews</h5>
+          <div class="d-flex justify-content-between">
+            <h5 id="sliderValue">16</h5>
+            <h5 id="monthORyear">$/month</h5>
+          </div>
+
+        </div>
+        <div class="range__slider">
+          <input class="slider" type="range" name="slider-range-month" min="10" step="6" value="16" max="40">
+        </div>
+        
+        <div class="myToggle">
+          <h6>Monthly Billing</h6>
+          <label class="toggle-control" id="myToggle">
+            <span class="control" id="myToggleControl"></span>
+          </label>
+          <h6>Yearly Billing</h6>
+          <div class="yB d-flex justify-content-center align-items-center"
+            <h6>25% dicount</h6>
+          </div>
+        </div>
+      </div>
+      <div class="pricingInfo row">
+        <div class="details col-8">
+          <h6> <img src="images/icon-check.svg" alt="check mark">Unlimited websites</h6>
+          <h6><img src="images/icon-check.svg" alt="check mark">100% data ownership</h6>
+          <h6><img src="images/icon-check.svg" alt="check mark">Email reports</h6>
+        </div>
+        <button class="col-4"> Start my trial</button> 
+      </div> 
+      </div>
+      
+    </div>
+    
+
+<script src="./script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
